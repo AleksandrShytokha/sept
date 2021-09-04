@@ -1,0 +1,89 @@
+.block-3 {
+  width: 100%;
+  background-color: #70bfff;
+}
+
+.main-flex-container {
+  width: 1030px;
+  height: 725x;
+  position: relative;
+  left: 25%;
+  margin: -125px 0 0 -125px;
+  padding: 125px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-flex-container__title {
+  position: relative;
+  padding-top: 210px;
+  font-size: 70px;
+  color: white;
+  font-family: 'MyRaleway-Bold';
+}
+
+.left-block {
+  width: 401px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+}
+
+.button-left {
+  width: 300px;
+  height: 101px;
+  font-size: 20px;
+  font-family: 'MyRaleway-Bold';
+  background-color: white;
+}
+
+.button-left:hover {
+  color: #25ca25;
+}
+
+.button-left:hover + .button-right {
+  color: #25ca25;
+}
+
+.button-right {
+  width: 101px;
+  height: 101px;
+  font-size: 40px;
+  background-color: white;
+  border-left: 2px solid #cccc;
+}
+
+.button-right:hover {
+  color: #25ca25;
+}
+
+.right-block__image {
+  position: absolute;
+  margin-top: 15px;
+  width: 400px;
+  height: 400px;
+}
