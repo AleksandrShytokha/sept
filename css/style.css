@@ -1,3 +1,248 @@
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Regul';
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'RalewayMed';
+    src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+body {
+    width: 100%;
+    height: 850px;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fas {
+    font-size: 30px;
+    line-height: 24px;
+    color: #ffcc00;
+    text-align: center;
+}
+
+/*Header*/
+.header {
+    margin-top: 100px;
+}
+
+.p-in-header, h1, legend {
+    text-align: center;
+}
+
 h1 {
-    color: aquamarine;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 66px;
+    color: #ffcc00;
+    font-weight: 900;
+    font-family: 'Roboto';
+}
+
+.p-in-header {
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: #898f8f;
+    font-weight: 500;
+    font-family: 'RalewayMed';
+
+}
+
+fieldset {
+    width: 428px;
+    margin-left: 36%;
+    border-top: 2px solid #ffcc00;
+    margin-top: 24px;
+}
+
+.fa-gripfire {
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffcc00;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+/*Main*/
+.main {
+    position: absolute;
+    top: 45%;
+    left: 26.4%;
+    margin: -125px 0 0 -125px;
+}
+
+.flex-main-container {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Left-block-in-main*/
+.left-block {
+    width: 350px;
+    height: 451px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image {
+    border: 2px solid #ffcc00;
+    width: 300px;
+    height: 300px;
+}
+
+/*Middle-in-main*/
+.middle-v-line {
+    width: 2px;
+    height: 550px;
+    border-left: 2px solid #ffcc00;
+}
+
+/*Right-block-in-main*/
+.right-block {
+    width: 480px;
+    height: 451px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*-person-info*/
+.person-info {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #666666;
+    font-weight: 900;
+    font-family: "Roboto";
+}
+
+.hr {
+    width: 101px;
+    height: 4px;
+    border-bottom: 2px solid #ffcc00;;
+}
+
+.job {
+    font-size: 24px;
+    line-height: 36px;
+    color: #666666;
+    font-weight: 400;
+    font-family: "Regul";
+}
+
+.social-icons {
+    width: 35px;
+    font-size: 24px;
+    line-height: 14px;
+    color: #cccccc;
+}
+
+.more-info-about {
+    text-align: center;
+    width: 420px;
+    height: 101px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    font-weight: 500;
+    font-family: "RalewayMed";
+}
+
+.dashed-line {
+    width: 42px;
+    height: 8px;
+    border-top: 5px dashed #ffcc00;
+}
+
+button {
+    width: 121px;
+    height: 26px;
+    border: 2px solid #ffcc00;
+    background-color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 24px;
+    color: #666666;
+    font-weight: 700;
+    font-family: "OpenSans";
+}
+
+.fa-chevron-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons:hover {
+    transform: scale(1.5);
+}
+
+.fas:hover {
+    transform: scale(1.5);
+}
+
+.fas, .image, .fab:hover {
+    cursor: pointer;
+}
+
+/*Bottom*/
+.circles {
+    width: 50px;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 48.5%;
+}
+
+.circles__item {
+    width: 10px;
+    height: 10px;
+    background-color: #ffcc00;
+    border-radius: 100px;
+}
+
+.middle-item {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border: 2px solid #ffcc00;
 }

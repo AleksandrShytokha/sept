@@ -1,0 +1,124 @@
+.block-4 {
+  width: 100%;
+  height: 1400px;
+  background-color: #ffe92f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-4-top {
+  display: inherit;
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
+  margin-top: 8%;
+  width: 507px;
+  height: 200px;
+}
+
+.block-4__title, .block-4__text {
+  text-align: center;
+  line-height: 27px;
+  color: #262626;
+}
+
+.block-4__title {
+  font-size: 90px;
+  font-weight: 700;
+  font-family: 'MyRaleway-Bold';
+}
+
+.block-4__text {
+  font-size: 17px;
+  font-weight: 300;
+  font-family: 'MyRaleway-Light';
+}
+
+.block-4__button {
+  width: 200px;
+  height: 56px;
+  background-color: #5585a2;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: 'MyRaleway-Light';
+  -webkit-filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 2px 2.5px rgba(0, 0, 0, 0.5));
+}
+
+/*images-grid*/
+.image-container {
+  display: -ms-grid;
+  display: grid;
+  width: 1000px;
+  height: 900px;
+  -ms-grid-columns: .66fr 10px .66fr 10px .66fr 10px .66fr 10px .66fr 10px .66fr;
+  grid-template-columns: .66fr .66fr .66fr .66fr .66fr .66fr;
+  -ms-grid-rows: 1.2fr 10px 1fr 10px 1.8fr;
+  grid-template-rows: 1.2fr 1fr 1.8fr;
+      grid-template-areas: "first-image first-image first-image first-image second-image second-image" "first-image first-image first-image first-image third-image third-image" "fourth-image fourth-image fourth-image fifth-image fifth-image fifth-image";
+  grid-gap: 10px;
+}
+
+.first-image, .second-image, .third-image,
+.fourth-image, .fifth-image {
+  width: 100%;
+  height: 100%;
+}
+
+.first-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: first-image;
+}
+
+.second-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-area: second-image;
+}
+
+.third-image {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-area: third-image;
+}
+
+.fourth-image {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: fourth-image;
+}
+
+.fifth-image {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 5;
+  grid-area: fifth-image;
+}
+
+/*button*/
+.button-block-4 {
+  margin-bottom: 35px;
+}

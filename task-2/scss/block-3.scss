@@ -1,0 +1,73 @@
+.block-3 {
+    width: 100%;
+    background-color: #70bfff;
+}
+
+.main-flex-container {
+    width: 1030px;
+    height: 725x;
+    position: relative;
+    left: 25%;
+    margin: -125px 0 0 -125px;
+    padding: 125px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__title {
+        position: relative;
+        padding-top: 210px;
+        font-size: 70px;
+        color: rgb(255, 255, 255);
+        font-family: 'MyRaleway-Bold';
+    }
+}
+
+.left-block {
+    width: 401px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__item {
+        display: flex;
+        filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.5));
+        // box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    }
+}
+
+.button-left {
+    width: 300px;
+    height: 101px;
+    font-size: 20px;
+    font-family: 'MyRaleway-Bold';
+    background-color: rgb(255, 255, 255);
+
+    &:hover {
+        color: rgb(37, 202, 37);
+    }
+
+    &:hover + .button-right {
+        color: rgb(37, 202, 37);
+    }
+}
+
+.button-right {
+    width: 101px;
+    height: 101px;
+    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    border-left: 2px solid #cccc;
+
+    &:hover {
+        color: rgb(37, 202, 37);
+    }
+}
+
+.right-block__image {
+    position: absolute;
+    margin-top: 15px;
+    width: 400px;
+    height: 400px;
+}

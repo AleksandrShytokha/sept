@@ -1,0 +1,94 @@
+.block-4 {
+    width: 100%;
+    height: 1400px;
+    background-color: #ffe92f;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &-top {
+        display: inherit;
+        flex-direction: inherit;
+        justify-content: inherit;
+        margin-top: 8%;
+        width: 507px;
+        height: 200px;
+    }
+
+    &__title, &__text {
+        text-align: center;
+        line-height: 27px;
+        color: #262626;
+    }
+
+    &__title {
+        font-size: 90px;
+        font-weight: 700;
+        font-family: 'MyRaleway-Bold';
+    }
+
+    &__text {
+        font-size: 17px;
+        font-weight: 300;
+        font-family: 'MyRaleway-Light';
+    }
+
+    &__button {
+        width: 200px;
+        height: 56px;
+        background-color: #5585a2;
+        font-size: 20px;
+        line-height: 27px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: 'MyRaleway-Light';
+        filter: drop-shadow(0px 2px 2.5px rgba(0,0,0,0.5));
+    }
+}
+
+/*images-grid*/
+.image-container {
+    display: grid;
+    width: 1000px;
+    height: 900px;
+    grid-template-columns: .66fr .66fr .66fr .66fr .66fr .66fr;
+    grid-template-rows: 1.2fr 1fr 1.8fr ;
+    grid-template-areas: 
+        "first-image first-image first-image first-image second-image second-image"
+        "first-image first-image first-image first-image third-image third-image"
+        "fourth-image fourth-image fourth-image fifth-image fifth-image fifth-image"
+    ;
+    grid-gap: 10px;
+}
+
+.first-image, .second-image, .third-image,
+.fourth-image, .fifth-image {
+    width: 100%;
+    height: 100%;
+}
+
+.first-image {
+    grid-area: first-image;
+}
+
+.second-image {
+    grid-area: second-image;
+}
+
+.third-image {
+    grid-area: third-image;
+}
+
+.fourth-image {
+    grid-area: fourth-image;
+}
+
+.fifth-image {
+    grid-area: fifth-image;
+}
+
+/*button*/
+.button-block-4 {
+    margin-bottom: 35px;
+}
